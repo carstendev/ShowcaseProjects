@@ -35,7 +35,7 @@ public class MainViewController {
 		JFileChooser fileChooser = new JFileChooser();
 		fileChooser.setCurrentDirectory(new java.io.File("."));
 		fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-		fileChooser.setDialogTitle("Speicherort wählen");
+		fileChooser.setDialogTitle("Choose Location: ");
 		fileChooser.setPreferredSize(new Dimension(450, 300));
 		fileChooser.setVisible(true);
 		int option = fileChooser.showOpenDialog(view);
@@ -47,6 +47,7 @@ public class MainViewController {
 
 	/**
 	 * Saves the downloadlink into the model
+	 * 
 	 * @param link the link to save
 	 */
 	public void setDonwloadLink(String link) {
